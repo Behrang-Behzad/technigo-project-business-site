@@ -188,7 +188,7 @@ form {
   .bookclub-three {
     display: block;
   }
-}
+
 
 /* stop cropping the video after break point */
 @media (min-width: 1300px) {
