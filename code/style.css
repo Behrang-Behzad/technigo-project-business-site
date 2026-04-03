@@ -65,6 +65,8 @@ input:focus {
 }
 
 .link-btn {
+  display: flex;
+  align-items: center;
   width: 324px;
   text-align: center;
   padding-block: 8px;
@@ -77,6 +79,24 @@ input:focus {
   font-weight: 700;
   margin: 0.4rem 0;
   transition: transform 0.2s ease;
+}
+
+.link-btn::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  margin: auto 1.8rem;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.google::before {
+  background-image: url(assets/google-icon.svg);
+}
+
+.apple::before {
+  background-image: url(assets/apple-icon.svg);
 }
 
 .link-btn:hover {
@@ -122,6 +142,9 @@ form {
   color: #000;
   margin: 0.8rem 0 0;
   font-weight: 600;
+  width: 260px;
+  padding-inline: 32px;
+  padding-block: 8px;
 }
 
 .next:hover {
