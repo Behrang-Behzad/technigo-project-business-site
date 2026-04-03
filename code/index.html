@@ -1,17 +1,97 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Business Site</title>
+    <title>The Book Nook Society Sign Up/Login</title>
+
+    <!-- importing google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Don't forget to link the CSS file here! -->
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/53c11c9f25.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <h1>Business name 🌻</h1>
+    <header class="hero">
+      <form action="https://httpbin.org/anything" method="POST">
+        <h1>
+          The Book Nook Society
+          <!-- <i class="fa-solid fa-book-bookmark"></i> -->
+        </h1>
+
+        <div class="type">
+          <div>
+            <label for="personal">Personal</label>
+            <input
+              class="radio"
+              type="radio"
+              name="account-type"
+              id="personal"
+              checked
+            />
+          </div>
+          <div>
+            <label for="business">Business</label>
+            <input
+              class="radio"
+              type="radio"
+              name="account-type"
+              id="business"
+            />
+          </div>
+        </div>
+
+        <label for="email"> Email address </label>
+        <input
+          type="email"
+          placeholder="Enter your email"
+          required
+          name="email"
+          maxlength="30"
+          id="email"
+        />
+
+        <button class="btn next" type="submit">Next</button>
+
+        <span class="or">or</span>
+
+        <a class="link-btn google" href="#">Sign up with Google</a>
+        <a class="link-btn apple" href="#">Sign up with Apple</a>
+
+        <div class="followup">
+          <p>Already have an account?</p>
+          <a class="log-link" href="#">Log in</a>
+        </div>
+      </form>
+
+      <video
+        class="bookclub-three"
+        src="./assets/3 students in a Book Club.mp4"
+        autoplay
+        loop
+        muted
+      ></video>
+      <video
+        class="bookclub-one"
+        src="./assets/one student with a book.mp4"
+        autoplay
+        loop
+        muted
+      ></video>
+    </header>
 
     <!-- Video or image as a header is cool :) -->
 
     <!-- Signup form -->
-
   </body>
 </html>
